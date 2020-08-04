@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-sketch</title>
+    <defs>
+        <filter x="-46.2%" y="-300.0%" width="192.3%" height="700.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-37.5%" y="-150.0%" width="175.0%" height="400.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="28.2951328%" fx="50%" fy="28.2951328%" r="115.533809%" gradientTransform="translate(0.500000,0.282951),scale(0.580972,1.000000),rotate(90.000000),translate(-0.500000,-0.282951)" id="radialGradient-3">
+            <stop stop-color="#FD7C00" offset="0%"></stop>
+            <stop stop-color="#F35300" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="2.49758199%" fx="50%" fy="2.49758199%" r="83.700565%" gradientTransform="translate(0.500000,0.024976),scale(1.000000,0.989547),rotate(90.000000),translate(-0.500000,-0.024976)" id="radialGradient-4">
+            <stop stop-color="#FDCE21" offset="0%"></stop>
+            <stop stop-color="#FDA500" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="74.9785156%" y1="81.25%" x2="33.8388824%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FDD12B" offset="0%"></stop>
+            <stop stop-color="#FDC003" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.561151,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-6">
+            <stop stop-color="#FEF3CB" offset="0%"></stop>
+            <stop stop-color="#FEDD67" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#FC8900" offset="0%"></stop>
+            <stop stop-color="#FCAA00" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-46.6%" y="-147.1%" width="193.2%" height="394.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="6.25" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="ico-sketch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shadow" transform="translate(25.500000, 58.500000)" fill="#000000">
+            <ellipse opacity="0.599999964" filter="url(#filter-1)" cx="6.5" cy="1" rx="6.5" ry="1"></ellipse>
+            <ellipse opacity="0.300000012" filter="url(#filter-2)" cx="6.5" cy="1" rx="2" ry="1"></ellipse>
+        </g>
+        <g id="Bottom-Back" transform="translate(1.125000, 23.500000)" fill="url(#radialGradient-3)">
+            <polygon id="Polygon" transform="translate(30.875000, 17.937500) rotate(-180.000000) translate(-30.875000, -17.937500) " points="30.875 -2.84217094e-14 61.75 35.875 -7.10542736e-15 35.875"></polygon>
+        </g>
+        <g id="Bottom-Mid" transform="translate(13.625000, 23.500000)">
+            <polygon id="Polygon" fill="#FDCA0D" transform="translate(18.375000, 17.937500) rotate(-180.000000) translate(-18.375000, -17.937500) " points="18.375 0 36.75 35.875 -1.1185497e-14 35.875"></polygon>
+            <polygon id="Polygon" fill="url(#radialGradient-4)" transform="translate(18.375000, 17.937500) rotate(-180.000000) translate(-18.375000, -17.937500) " points="18.375 0 36.125 35.875 0.625 35.875"></polygon>
+        </g>
+        <g id="Top-Left" transform="translate(13.625000, 3.500000)" fill="url(#linearGradient-5)">
+            <polygon id="Polygon" transform="translate(9.187500, 10.000000) rotate(-180.000000) translate(-9.187500, -10.000000) " points="17.5 18.125 18.375 3.7658765e-13 2.84217094e-14 20"></polygon>
+        </g>
+        <g id="Top-Right" transform="translate(32.000000, 3.500000)" fill="url(#linearGradient-5)">
+            <polygon id="Polygon" transform="translate(9.187500, 10.000000) scale(-1, 1) rotate(-180.000000) translate(-9.187500, -10.000000) " points="17.5 18.125 18.375 0 7.10542736e-15 20"></polygon>
+        </g>
+        <g id="Top-Mid" transform="translate(13.625000, 3.500000)">
+            <polygon id="Polygon" fill="#FEFBED" transform="translate(18.375000, 10.000000) rotate(-180.000000) translate(-18.375000, -10.000000) " points="18.375 20 36.75 3.31623617e-13 3.55271368e-14 -1.42108547e-14"></polygon>
+            <polygon id="Polygon" fill="url(#radialGradient-6)" transform="translate(18.375000, 9.750000) rotate(-180.000000) translate(-18.375000, -9.750000) " points="18.375 19.5 35.75 4.68958206e-13 1 -7.10542736e-15"></polygon>
+        </g>
+        <g id="Top-Side-Left" transform="translate(1.125000, 5.375000)">
+            <polygon id="Polygon" fill="#FEE693" transform="translate(6.687500, 9.062500) rotate(-180.000000) translate(-6.687500, -9.062500) " points="-2.48689958e-14 18.125 6.875 9 13.375 3.26849658e-13 0.25 -7.10542736e-15"></polygon>
+            <polygon id="Polygon" fill="url(#linearGradient-7)" transform="translate(6.687500, 9.062500) rotate(-180.000000) translate(-6.687500, -9.062500) " points="-2.48689958e-14 18.125 13.375 2.13162821e-14 0.875 0.5"></polygon>
+        </g>
+        <g id="Top-Side-Right" transform="translate(55.875000, 14.875000) scale(-1, 1) translate(-55.875000, -14.875000) translate(48.875000, 5.375000)">
+            <polygon id="Polygon" fill="#FEE693" transform="translate(6.687500, 9.062500) rotate(-180.000000) translate(-6.687500, -9.062500) " points="-8.59035065e-15 18.125 6.875 9 13.375 3.10626525e-13 0.25 -2.33285613e-14"></polygon>
+            <polygon id="Polygon" fill="url(#linearGradient-7)" transform="translate(6.687500, 9.062500) rotate(-180.000000) translate(-6.687500, -9.062500) " points="-3.55271368e-14 18.125 13.375 2.13162821e-14 0.875 0.5"></polygon>
+        </g>
+        <ellipse id="Highlight" fill="#FFFFFF" opacity="0.100000001" filter="url(#filter-8)" cx="32" cy="23.5" rx="20.125" ry="6.375"></ellipse>
+    </g>
+</svg>

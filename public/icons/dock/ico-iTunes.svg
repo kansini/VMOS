@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-iTunes</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="64"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FDFCFD" offset="0%"></stop>
+            <stop stop-color="#DDE2E7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="30.6579861%" y1="2.66493056%" x2="73.3940972%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FC5C57" offset="0%"></stop>
+            <stop stop-color="#D54DBF" offset="42.9525017%"></stop>
+            <stop stop-color="#9661E3" offset="61.4090787%"></stop>
+            <stop stop-color="#6570FF" offset="75.7695203%"></stop>
+            <stop stop-color="#25C9FC" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="28" cy="28" r="28"></circle>
+        <filter x="-5.8%" y="-4.0%" width="111.6%" height="111.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1.24444444" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="45.6719327%" y1="14.2133407%" x2="75.3605141%" y2="81.6246006%" id="linearGradient-7">
+            <stop stop-color="#FC5C57" offset="0%"></stop>
+            <stop stop-color="#865EF6" offset="60.655425%"></stop>
+            <stop stop-color="#40AAFA" offset="100%"></stop>
+        </linearGradient>
+        <path d="M19.6184637,14.7642095 C19.6073268,13.9444073 20.2595315,13.1485842 21.0596578,12.9897743 L38.01062,9.62532986 C38.8177064,9.46513852 39.4757061,10.0005191 39.4803603,10.8312762 L39.6258333,36.7976389 C39.6258333,36.7976389 39.6258333,40.5975687 35.3813542,41.4596875 C31.136875,42.3218063 30.1391319,40.3853819 29.763125,39.1667014 C29.3871181,37.9480208 29.2823611,36.4617361 30.3430556,35.065625 C31.40375,33.6695139 33.1706424,33.3473445 33.9509722,33.1700347 C34.7313021,32.992725 36.6688194,32.9515271 37.1415625,32.2488534 C37.6143056,31.5461798 37.5620486,30.0871181 37.5620486,30.0871181 L37.5177212,19.1638628 C37.5154896,18.6139512 37.0755445,18.2540956 36.5274288,18.3616029 L22.7336476,21.0671123 C22.1889558,21.1739481 21.7488901,21.7053894 21.750697,22.2638748 C21.750697,22.2638748 21.8028636,37.2138544 21.7551736,38.7323611 C21.7074836,40.2508678 21.5726389,41.1602423 21.083125,42.4117361 C20.5936111,43.6632299 19.9911979,44.141441 18.9325694,44.6999838 C17.873941,45.2585267 15.3676736,45.4377778 14.1135069,45.0707651 C12.8593403,44.7037524 11.5971528,43.3647581 11.5971528,41.4596875 C11.5971528,39.5546169 12.2488287,38.7599322 12.9538403,38.1544722 C13.9837397,37.2700004 15.9154032,36.7566959 17.3070139,36.5305208 C18.3804687,36.3560548 19.3027431,36.5305208 19.5982986,35.065625 C19.8938542,33.6007292 19.6184637,14.7642095 19.6184637,14.7642095 Z" id="path-8"></path>
+        <filter x="-1.8%" y="-1.4%" width="103.6%" height="102.8%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端-HD" transform="translate(-669.000000, -396.000000)">
+            <g id="ico-iTunes" transform="translate(669.000000, 396.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="base"></g>
+                <g id="ico-itunes" mask="url(#mask-2)">
+                    <g transform="translate(4.000000, 4.000000)">
+                        <g id="Oval-1">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="url(#linearGradient-4)" stroke-width="2.48888889" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                        <g id="Path-21">
+                            <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

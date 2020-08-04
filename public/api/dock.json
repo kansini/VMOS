@@ -1,0 +1,85 @@
+[
+  {
+    "icon": "finder",
+    "name": "访达",
+    "isActive": true
+  },
+  {
+    "icon": "launchpad",
+    "name": "启动台",
+    "isActive": false
+  },
+  {
+    "icon": "mail",
+    "name": "邮件",
+    "isActive": false,
+    "update": 2
+  },
+  {
+    "icon": "appStore",
+    "name": "AppStore",
+    "isActive": false,
+    "update": 1
+  },
+  {
+    "name": "safari",
+    "icon": "safari",
+    "isActive": false
+  },
+  {
+    "icon": "photos",
+    "name": "照片",
+    "isActive": false
+  },
+  {
+    "icon": "settings",
+    "name": "设置",
+    "isActive": false,
+    "update": 1
+  },
+  {
+    "icon": "terminal",
+    "name": "终端",
+    "isActive": true
+  },
+  {
+    "icon": "chrome",
+    "name": "chrome",
+    "isActive": false
+  },
+  {
+    "icon": "postman",
+    "name": "postman",
+    "isActive": false
+  },
+  {
+    "icon": "sketch",
+    "name": "sketch",
+    "isActive": false
+  },
+  {
+    "icon": "pycharm",
+    "name": "pyCharm",
+    "isActive": true
+  },
+  {
+    "icon": "ps",
+    "name": "adobePhotoshop2020",
+    "isActive": false
+  },
+  {
+    "icon": "ai",
+    "name": "adobeIllustrator2020",
+    "isActive": false
+  },
+  {
+    "icon": "wechat",
+    "name": "微信",
+    "isActive": false
+  },
+  {
+    "icon": "trash",
+    "name": "废纸篓",
+    "isActive": false
+  }
+]

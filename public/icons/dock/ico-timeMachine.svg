@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-timeMachine</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="64"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#D7D7D6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F2F3F3" offset="0%"></stop>
+            <stop stop-color="#B9B9B9" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="28" cy="28" r="28"></circle>
+        <filter x="-3.1%" y="-3.1%" width="106.2%" height="106.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <radialGradient cx="50%" cy="28.7037744%" fx="50%" fy="28.7037744%" r="82.8093263%" id="radialGradient-7">
+            <stop stop-color="#107773" offset="0%"></stop>
+            <stop stop-color="#021E23" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#CDCDCD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M28.6222222,10.7337459 C38.158111,10.7337459 45.8884763,18.4641112 45.8884763,28 C45.8884763,37.5358888 38.158111,45.2662541 28.6222222,45.2662541 C24.0592542,45.2662541 19.7725639,43.4860905 16.5702792,40.3642417 C15.8813011,39.6925696 15.8672719,38.5895447 16.538944,37.9005667 C17.2106161,37.2115886 18.313641,37.1975594 19.002619,37.8692315 C21.5605616,40.3629229 24.9772857,41.7818096 28.6222222,41.7818096 C36.2337055,41.7818096 42.4040319,35.6114833 42.4040319,28 C42.4040319,20.3885167 36.2337055,14.2181904 28.6222222,14.2181904 C21.6595492,14.2181904 15.9028134,19.3814212 14.9719847,26.0879127 C15.0648256,26.2577775 15.2784891,26.2577778 15.399475,26.2577778 L15.399475,26.2577778 L17.1967603,26.2577778 C17.3963587,26.2577778 17.6097401,26.5932779 17.5168324,26.761028 C16.1164068,29.2895742 13.3155556,34.3466667 13.3155556,34.3466667 C13.3155556,34.3466667 10.4511269,29.4469861 9.01891262,26.9971459 C8.87483064,26.7506898 9.14859025,26.2577778 9.49177426,26.2577778 L9.49177426,26.2577778 L11.0997986,26.2577778 C11.2255357,26.2577778 11.3781558,26.2577776 11.4576808,26.1279741 C12.3897926,17.4722713 19.7190739,10.7337459 28.6222222,10.7337459 Z M28.1440832,16.4581904 C28.5564558,16.4581904 28.8907499,16.7901814 28.8907499,17.2055079 L28.8917684,27.3935423 C29.1822516,27.6213535 29.3688889,27.9755477 29.3688889,28.3733333 C29.3688889,28.4239099 29.3658717,28.4737819 29.3600076,28.5227789 C29.3626362,28.5252506 29.3658023,28.5284715 29.368946,28.5317269 L33.7528966,33.0714406 C34.0140209,33.3418427 34.0331714,33.7559683 33.8100744,34.0457498 L33.7358776,34.1286859 C33.4392416,34.4151439 32.9657026,34.4060152 32.6786825,34.1087971 L28.3254985,29.6016205 C28.2600525,29.6122514 28.1928938,29.6177778 28.1244444,29.6177778 C27.4371568,29.6177778 26.88,29.060621 26.88,28.3733333 C26.88,27.958097 27.0833719,27.5903608 27.3959431,27.3642971 L27.3974165,17.2055079 C27.3974165,16.8271701 27.6759006,16.5144973 28.042161,16.4650125 L28.1440832,16.4581904 Z" id="path-9"></path>
+        <filter x="-4.1%" y="-4.3%" width="108.1%" height="108.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-4.1%" y="-4.3%" width="108.1%" height="108.7%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端-HD" transform="translate(-842.000000, -209.000000)">
+            <g id="ico-timeMachine" transform="translate(842.000000, 209.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="base"></g>
+                <g id="time-machine" mask="url(#mask-2)">
+                    <g transform="translate(4.000000, 4.000000)">
+                        <g id="Oval-1" fill="none">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="url(#linearGradient-4)" stroke-width="0.5" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                        <circle id="Oval-1" fill="url(#radialGradient-7)" fill-rule="evenodd" cx="28" cy="28" r="25.9155556"></circle>
+                        <g id="Shape" fill="none" fill-rule="nonzero">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                            <use fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

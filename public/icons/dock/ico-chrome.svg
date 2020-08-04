@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-chrome</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="64"></rect>
+        <linearGradient x1="50%" y1="11.8055556%" x2="50%" y2="87.5%" id="linearGradient-3">
+            <stop stop-color="#F6F0EE" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F06B59" offset="0%"></stop>
+            <stop stop-color="#DF2227" offset="100%"></stop>
+        </linearGradient>
+        <path d="M47.4035088,15.4049123 C40.6417544,1.86032655 24.1310877,-3.66245676 10.5262807,3.0694899 C6.28403509,5.16847033 2.6582807,8.32256499 0,12.2261209 L11.0526316,31.2988694 C9.01722807,24.8576599 12.6120351,17.9936711 19.082,15.9673138 C20.2196842,15.6108002 21.4037895,15.4215398 22.5964912,15.4049123 L47.4035088,15.4049123 L47.4035088,15.4049123 Z" id="path-5"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#000000" stop-opacity="0.03" offset="0%"></stop>
+            <stop stop-color="#B2B2B2" stop-opacity="0.06" offset="71.4265784%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.15" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="44.2528736%" x2="31.74588%" y2="85.0574713%" id="linearGradient-8">
+            <stop stop-color="#4CB749" offset="0%"></stop>
+            <stop stop-color="#388B41" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.66666667,0 L15.7192982,19.0727485 C16.4480351,21.2482645 17.7770526,23.1758347 19.5538246,24.635389 C24.7856491,28.932626 32.5259298,28.1936792 36.8421053,22.9851072 L25.2982456,42.5469006 C20.6129123,42.1696025 16.1029474,40.6034364 12.1986667,37.997561 C4.50482252,32.862853 0.248313728,24.5352175 0.0147368421,15.9694658 L0.0147368421,14.4798049 C0.151136269,9.48144069 1.66323345,4.46034196 4.66666667,0 Z" id="path-9"></path>
+        <linearGradient x1="24.7755177%" y1="77.8063965%" x2="79.3612081%" y2="0%" id="linearGradient-11">
+            <stop stop-color="#000000" stop-opacity="0.03" offset="0%"></stop>
+            <stop stop-color="#373737" stop-opacity="0.06" offset="78.5694356%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.15" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="39.3897519%" y1="12.7073483%" x2="59.7012313%" y2="84.9222791%" id="linearGradient-12">
+            <stop stop-color="#FCD209" offset="0%"></stop>
+            <stop stop-color="#E4B022" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,39.3681092 C15.1494737,40.5083172 28.3590877,29.2062465 29.5041404,14.1241039 C29.8737895,9.25786324 28.930386,4.38159719 26.7719298,0 L1.96491228,0 C8.74729825,0.031054347 14.2203158,5.52987446 14.1891228,12.2821165 C14.1765965,15.0139209 13.2452281,17.6628323 11.5438596,19.8063158 L0,39.3681092 L0,39.3681092 Z" id="path-13"></path>
+        <linearGradient x1="45.1923077%" y1="45.9519965%" x2="50%" y2="51.6540229%" id="linearGradient-15">
+            <stop stop-color="#000000" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.06" offset="16.3245376%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.03" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-16">
+            <stop stop-color="#81B4E0" offset="0%"></stop>
+            <stop stop-color="#0C5A94" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.519041,0.00978084501 C15.872425,0.243546069 20.1403509,4.63819993 20.1403509,10.0254191 C20.1403509,15.5623847 15.6318596,20.0508382 10.0701754,20.0508382 C4.69285647,20.0508382 0.300062841,15.8550296 0.0147368421,10.5724748 L0.0147368421,9.47836343 C0.292081671,4.34357285 4.45031891,0.235581545 9.62130993,0.00978084501 L10.5190421,0.00978089669 L10.519041,0.00978084501 Z" id="path-17"></path>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-chrome">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="base"></g>
+            <g id="chrome-icon" mask="url(#mask-2)">
+                <g transform="translate(4.000000, 4.000000)">
+                    <circle id="bg" fill="url(#linearGradient-3)" cx="27.5087719" cy="27.5087719" r="17.6842105"></circle>
+                    <g id="rim" stroke-width="1" fill="none">
+                        <g id="top" transform="translate(4.666667, 0.000000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="red" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            <path d="M0,12.2261209 L11.0526316,31.2988694 C10.234,28.5558169 10.4078947,25.6137232 11.5438596,22.9851072 L0.49122807,11.4925536" id="shadow" fill="url(#linearGradient-7)" mask="url(#mask-6)"></path>
+                        </g>
+                        <g id="left" transform="translate(0.000000, 12.226121)">
+                            <mask id="mask-10" fill="white">
+                                <use xlink:href="#path-9"></use>
+                            </mask>
+                            <use id="green" fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
+                            <path d="M25.2982456,42.5469006 L36.8421053,22.9851072 C35.0208772,25.1476635 32.5043158,26.6162651 29.7192982,27.1419883 L24.8070175,42.5469006" id="shadow" fill="url(#linearGradient-11)" mask="url(#mask-10)"></path>
+                        </g>
+                        <g id="right" transform="translate(25.298246, 15.404912)">
+                            <mask id="mask-14" fill="white">
+                                <use xlink:href="#path-13"></use>
+                            </mask>
+                            <use id="yellow" fill="url(#linearGradient-12)" xlink:href="#path-13"></use>
+                            <path d="M26.7719298,0 L1.96491228,0 C5.70168421,0.0171165692 9.22722807,1.72706183 11.5438596,4.64592593 L27.2631579,0.733567251" id="shadow" fill="url(#linearGradient-15)" mask="url(#mask-14)"></path>
+                        </g>
+                    </g>
+                    <g id="center" stroke-width="1" fill="none" transform="translate(17.438596, 17.483353)">
+                        <mask id="mask-18" fill="white">
+                            <use xlink:href="#path-17"></use>
+                        </mask>
+                        <use id="Clip-2" fill="url(#linearGradient-16)" xlink:href="#path-17"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

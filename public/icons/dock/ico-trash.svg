@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-trash</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="64"></rect>
+        <linearGradient x1="25.8412436%" y1="47.5086749%" x2="79.4093016%" y2="55.9901893%" id="linearGradient-3">
+            <stop stop-color="#D6D7DB" offset="0%"></stop>
+            <stop stop-color="#E2E3E5" offset="23.490522%"></stop>
+            <stop stop-color="#DEDFE3" offset="80.5606907%"></stop>
+            <stop stop-color="#FAFAFA" offset="100%"></stop>
+        </linearGradient>
+        <path d="M22.6699099,0 C5.20945923,-2.66210998e-15 1.29276727,3.88560563 1.29276727,3.88560563 C0.578791622,4.3601614 0.108686251,5.44112475 0.243670571,6.30585387 L2.31785825,19.5934009 C2.31785825,19.5934009 4.61075568,38.1640279 5.52113592,45.2223621 C6.43151617,52.2806963 10.9920669,55.883964 22.6699104,55.883964 C34.347754,55.883964 38.2055331,52.4797706 39.4231552,45.2223614 C40.6407773,37.9649523 42.9368557,19.5934 42.9368557,19.5934 L45.0872023,6.30585377 C45.2267191,5.4437434 44.769464,4.32378976 44.0273564,3.87458352 C44.0273564,3.87458352 40.1303606,2.67850603e-15 22.6699099,0 Z" id="path-4"></path>
+        <filter x="-7.2%" y="-4.5%" width="114.5%" height="112.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-24.6%" y="-78.9%" width="149.2%" height="257.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="2.63603604" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.3%" y="-157.9%" width="176.7%" height="415.8%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="2.63603604" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="92.9764833%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#C6C7C5" offset="0%"></stop>
+            <stop stop-color="#E4E4E6" offset="21.9806282%"></stop>
+            <stop stop-color="#EDEDEE" offset="50.9469902%"></stop>
+            <stop stop-color="#EDEDED" offset="79.9501921%"></stop>
+            <stop stop-color="#E1E3E8" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-10" cx="22.6699099" cy="5.23297297" rx="21.8677477" ry="5.00846847"></ellipse>
+        <filter x="-3.4%" y="-15.0%" width="106.9%" height="129.9%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.783259737 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-3.4%" y="-15.0%" width="106.9%" height="129.9%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-trash">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="base"></g>
+            <g id="icon" mask="url(#mask-2)">
+                <g transform="translate(9.000000, 4.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="path" stroke="none" fill="none">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
+                        <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <ellipse id="oval" stroke="none" fill="#FCFCFC" fill-rule="evenodd" filter="url(#filter-7)" mask="url(#mask-5)" cx="8.69891892" cy="53.5922523" rx="16.0798198" ry="5.00846847"></ellipse>
+                    <ellipse id="oval" stroke="none" fill="#C8CCD1" fill-rule="evenodd" filter="url(#filter-8)" mask="url(#mask-5)" transform="translate(28.787027, 55.844234) rotate(-6.000000) translate(-28.787027, -55.844234) " cx="28.787027" cy="55.8442342" rx="10.3120721" ry="2.50423423"></ellipse>
+                    <g id="oval" stroke="none" fill="none">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                        <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-10"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

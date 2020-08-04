@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Ico-tags</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Finder-/-Button-(Tags)" transform="translate(-10.000000, -6.000000)">
+            <g id="Ico-tags" transform="translate(10.500000, 6.000000)">
+                <path d="M16.3871874,0.649849687 C16.2323124,0.494974747 16,0.5 16,0.5 L5.15571634,0.5 C4.60539243,0.887040604 2.30189519,2.58367757 0.606009893,4.99971459 C2.30174826,7.41615964 4.60537726,9.112942 5.15571755,9.5 L16,9.5 C16.1602564,9.5 16.2764345,9.46090321 16.3501503,9.38718735 C16.5050253,9.23231241 16.5,9 16.5,9 L16.5,7.43981033 L16.3871874,0.649849687 Z" id="Outline" stroke="#737373"></path>
+                <rect id="Hole" fill="#737373" x="3" y="4" width="2" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
