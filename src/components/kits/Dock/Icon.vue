@@ -51,7 +51,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        width: 80px;
+        width: 64px;
         height: 64px;
         transition: all ease .2s;
         background-size: 100%;

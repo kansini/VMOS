@@ -55,7 +55,7 @@
         justify-content: space-between;
         align-items: center;
         height: 76px;
-        padding: 0 4px;
+        //padding: 0 4px;
         box-sizing: border-box;
         left: 50%;
         bottom: 0;

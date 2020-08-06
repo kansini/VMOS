@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "vmo";
+    src:url('./icons/iconfont.woff?t=1596706677150') format('woff'),
+    url('./icons/iconfont.ttf?t=1596706677150') format('truetype');
+}
+
+[class^="vmo-ico-"] {
+    font-family: "vmo" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vmo-ico-apple:before {
+    content: "\e60f";
+}
+
+.vmo-ico-back:before {
+    content: "\e605";
+}
+
+.vmo-ico-columnView:before {
+    content: "\e607";
+}
+
+.vmo-ico-forward:before {
+    content: "\e608";
+}
+
+.vmo-ico-arrangemen:before {
+    content: "\e609";
+}
+
+.vmo-ico-iconView:before {
+    content: "\e60a";
+}
+
+.vmo-ico-listView:before {
+    content: "\e60b";
+}
+
+.vmo-ico-search:before {
+    content: "\e60c";
+}
+
+.vmo-ico-performTasks:before {
+    content: "\e60d";
+}
+
+.vmo-ico-share:before {
+    content: "\e60e";
+}
+
