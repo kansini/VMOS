@@ -1,5 +1,6 @@
 <template>
     <div class="home" @click="closeNC" @mousemove="toggleDock($event)">
+        <vmo-menu />
         <vmo-launchpad :visible.sync="launchpad" @close="closeLaunchpad"/>
         <vmo-menu-bar @toggleNC="toggleNC"/>
         <components v-for="(app,index) in apps"
@@ -125,6 +126,6 @@
     }
 
     .is-top {
-        z-index: 999 !important;
+        z-index: 10 !important;
     }
 </style>

@@ -1,6 +1,17 @@
 <template>
     <div class="vmo-menubar">
-        <div class="vmo-menubar-left"></div>
+        <div class="vmo-menubar-left">
+            <vmo-button
+                    :icon="btn.icon"
+                    v-for="(btn,index) in buttons"
+                    :is-active="currentBtn == index"
+                    :key="btn.title"
+                    @click="clickTopMenu(index)"
+                    @over="overTopMenu(index)"
+            >
+                <span v-if="btn.title">{{btn.title}}</span>
+            </vmo-button>
+        </div>
         <div class="vmo-menubar-right">
             <div class="vmo-menubar-icon">
                 <img src="../../assets/img/icons/icon-AirPlay.svg" alt="">
@@ -25,15 +36,65 @@
                 <img src="../../assets/img/icons/icon-NotificationCentre.svg" alt="">
             </div>
         </div>
+        <div class="vmo-menubar-mask" v-if="topMenuActive" @click="clickMask"></div>
     </div>
 </template>
 
 <script>
     export default {
         name: "MenuBar",
-        methods:{
-            toggleNotificationCentre(){
+        props: {
+            buttons: {
+                type: Array,
+                default: () => [
+                    {
+                        "icon": "apple",
+                        "isActive": true
+                    },
+                    {
+                        "title": "访达"
+                    },
+                    {
+                        "title": "文件"
+                    },
+                    {
+                        "title": "编辑"
+                    },
+                    {
+                        "title": "显示"
+                    },
+                    {
+                        "title": "前往"
+                    },
+                    {
+                        "title": "窗口"
+                    },
+                    {
+                        "title": "帮助"
+                    }
+                ]
+            }
+        },
+        data() {
+            return {
+                currentBtn: -1,
+                topMenuActive: false
+            }
+        },
+        methods: {
+            toggleNotificationCentre() {
                 this.$emit('toggleNC')
+            },
+            clickTopMenu(index) {
+                this.topMenuActive = !this.topMenuActive
+                this.topMenuActive ? this.currentBtn = index : this.currentBtn = -1
+            },
+            overTopMenu(index) {
+                this.topMenuActive ? this.currentBtn = index : ''
+            },
+            clickMask() {
+                this.topMenuActive = false
+                this.currentBtn = -1
             }
         }
     }
@@ -48,14 +109,31 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 24px;
-        padding: 0 24px;
+        height: 22px;
+        padding: 0 24px 0 10px;
         box-sizing: border-box;
         background: rgba(255, 255, 255, 0.75);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.10), 0 1px 0 0 rgba(127, 127, 127, 0.40);
         backdrop-filter: blur(10px);
         font-size: 12px;
         z-index: 998;
+
+        .vmo-menubar-mask {
+            left: 0;
+            top: 22px;
+            position: fixed;
+            width: 100%;
+            height: calc(100vh - 22px);
+            z-index: 11;
+            background: url("../../assets/img/wallpaper/Sierra.jpg") no-repeat center;
+            background-size: 100%;
+        }
+
+        .vmo-menubar-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         .vmo-menubar-right {
             display: flex;
