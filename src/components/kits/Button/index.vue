@@ -55,6 +55,7 @@
         font-size: 14px;
         color: rgba(0, 0, 0, .75);
         font-weight: 400;
+        z-index: 999;
 
         &:nth-child(2) {
             font-weight: 600;

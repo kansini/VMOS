@@ -1,5 +1,7 @@
 <template>
-    <i :class="`vmo-ico-${icon}`" :style="{color:color,fontSize:`${size}px`}"></i>
+    <svg class="vmo-icon" aria-hidden="true">
+        <use :xlink:href="`#vmo-ico-${icon}`"></use>
+    </svg>
 </template>
 
 <script>
@@ -8,20 +10,12 @@
         props: {
             icon: {
                 type: String,
-                default: "apple"
-            },
-            color: {
-                type: String,
-                default: "#ff3333"
-            },
-            size: {
-                type: Number,
-                default: 100
+                default: "pictures"
             }
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

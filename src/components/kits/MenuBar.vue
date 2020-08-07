@@ -175,7 +175,7 @@
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.10), 0 1px 0 0 rgba(127, 127, 127, 0.40);
         backdrop-filter: blur(10px);
         font-size: 12px;
-        z-index: 998;
+        z-index: 999;
 
         .vmo-menubar-mask {
             left: 0;
@@ -183,7 +183,7 @@
             position: fixed;
             width: 100%;
             height: calc(100vh - 22px);
-            z-index: 11;
+            z-index: 998;
             background: transparent;
         }
 

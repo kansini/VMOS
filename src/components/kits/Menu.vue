@@ -47,6 +47,7 @@
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.20), 0 4px 10px 0 rgba(0, 0, 0, 0.28);
         border-radius: 0 0 5px 5px;
         backdrop-filter: blur(20px);
+        z-index: 1000;
 
         .vom-menu-item {
 

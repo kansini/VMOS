@@ -1,7 +1,16 @@
 @font-face {
     font-family: "vmo";
-    src:url('./icons/iconfont.woff?t=1596706677150') format('woff'),
+    src: url('./icons/iconfont.woff?t=1596706677150') format('woff'),
     url('./icons/iconfont.ttf?t=1596706677150') format('truetype');
+url('./iconfont.svg?t=1596786497075#vmo') format('svg');
+}
+
+.vmo-icon {
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
 
 [class^="vmo-ico-"] {
@@ -10,6 +19,46 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.vmo-ico-allFiles:before {
+    content: "\e610";
+}
+
+.vmo-ico-airDrop:before {
+    content: "\e611";
+}
+
+.vmo-ico-applications:before {
+    content: "\e612";
+}
+
+.vmo-ico-downloads:before {
+    content: "\e613";
+}
+
+.vmo-ico-documents:before {
+    content: "\e614";
+}
+
+.vmo-ico-movies:before {
+    content: "\e615";
+}
+
+.vmo-ico-home:before {
+    content: "\e616";
+}
+
+.vmo-ico-music:before {
+    content: "\e617";
+}
+
+.vmo-ico-desktop:before {
+    content: "\e618";
+}
+
+.vmo-ico-pictures:before {
+    content: "\e619";
 }
 
 .vmo-ico-apple:before {
@@ -28,7 +77,7 @@
     content: "\e608";
 }
 
-.vmo-ico-arrangemen:before {
+.vmo-ico-arrangement:before {
     content: "\e609";
 }
 

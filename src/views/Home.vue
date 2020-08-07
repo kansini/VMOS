@@ -1,6 +1,5 @@
 <template>
     <div class="home" @click="closeNC" @mousemove="toggleDock($event)">
-        <vmo-menu />
         <vmo-launchpad :visible.sync="launchpad" @close="closeLaunchpad"/>
         <vmo-menu-bar @toggleNC="toggleNC"/>
         <components v-for="(app,index) in apps"
@@ -11,7 +10,6 @@
                     :isActive="currentTop == index"
                     @clickWin="activeWin(index)"
                     @close="closeApp(index)"
-                    @toggleFullScreen="toggleFullScreen(index)"
                     :key="app.name"
                     :isFullSize.sync="app.fullSize"
                     v-drag
@@ -44,14 +42,14 @@
                         "level": 2,
                         "fullSize": false
                     },
-                    {
-                        "name": "win",
-                        "show": true,
-                        "level": 3,
-                        "fullSize": false
-                    }
+                    // {
+                    //     "name": "win",
+                    //     "show": true,
+                    //     "level": 3,
+                    //     "fullSize": false
+                    // }
                 ],
-                currentTop: 2,
+                currentTop: 1,
                 appsAccount: 3
 
             }
@@ -126,6 +124,6 @@
     }
 
     .is-top {
-        z-index: 10 !important;
+        z-index: 997 !important;
     }
 </style>
