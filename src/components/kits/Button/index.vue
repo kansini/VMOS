@@ -5,7 +5,7 @@
             :class="{isActive:isActive}">
         <i :class="`vmo-ico-${icon}`"></i>
         <slot></slot>
-        <vmo-menu :visible="isActive"/>
+        <vmo-menu :visible="isActive" :menus="menus"/>
     </button>
 </template>
 
@@ -25,6 +25,11 @@
                 type: Boolean,
                 default: false
             },
+            menus: {
+                type: Array,
+                default: () => []
+            }
+
         },
         methods: {
             handleToButton() {

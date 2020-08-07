@@ -1,8 +1,9 @@
 <template>
-    <div class="vmo-menu" v-if="visible" @click="clickItem">
+    <div class="vmo-menu" v-if="visible && menus" @click="clickItem">
         <div class="vom-menu-item"
              v-for="(item,index) in menus"
              :class="item.divider ? 'vom-menu-item--hasDivider' : ''"
+             :key="index"
         >
             <div class="vom-menu-item-content">
                 <div>{{item.title}}</div>
@@ -22,28 +23,7 @@
             },
             menus: {
                 type: Array,
-                default: () => [
-                    {
-                        "title": "关于本机",
-                        "divider": true
-                    },
-                    {"title": "系统偏好设置"},
-                    {
-                        "title": "App Store",
-                        "divider": true
-                    },
-                    {"title": "最近使用项目", "divider": true},
-                    {
-                        "title": "强制退出",
-                        "shortcut": "⌘W",
-                        "divider": true
-                    },
-                    {"title": "睡眠"},
-                    {"title": "重新启动"},
-                    {"title": "关机", "divider": true},
-                    {"title": "锁定屏幕"},
-                    {"title": "退出登录"}
-                ]
+                default: () => []
             }
         },
         methods: {

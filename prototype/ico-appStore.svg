@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-appStore</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="64"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#D7D7D6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F2F3F3" offset="0%"></stop>
+            <stop stop-color="#B9B9B9" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="28" cy="28" r="28"></circle>
+        <filter x="-3.1%" y="-3.1%" width="106.2%" height="106.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="122.872899%" id="radialGradient-7">
+            <stop stop-color="#16C7FB" offset="0%"></stop>
+            <stop stop-color="#1960EF" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FCFCFC" offset="0%"></stop>
+            <stop stop-color="#D9D9D9" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12.398807,35.1106529 L16.095258,37.3604795 L16.095258,37.3604795 C14.3400475,38.9699469 10.8762632,42.2902224 10.8762632,42.2902224 C10.5755914,42.5778973 10.4255138,42.4852758 10.5397694,42.0854172 C10.5397694,42.0854172 11.8757464,37.4700625 12.398807,35.1106529 Z M41.9501059,33.2178619 C45.0219097,34.3334201 45.289514,39.5482984 44.0630557,41.9753302 C43.3539814,43.0600374 43.7794098,40.9254512 42.0473331,39.8525553 C38.6809529,37.767327 38.9987273,36.760816 38.8455035,36.0226563 C38.7334041,35.4826146 39.1231718,34.8884969 39.1231718,34.8884969 C40.2314095,34.2486561 40.8418682,33.8577028 41.9501059,33.2178619 Z M21.7969012,19.1955338 L25.3571364,21.2510367 L25.3571364,21.2510367 C22.4074228,26.3600933 19.4577078,31.4691472 16.5079942,36.5782024 C15.2499965,35.8518976 13.9919975,35.1255914 12.7339998,34.3992866 C15.7549669,29.3313699 18.775934,24.2634518 21.7969012,19.1955338 Z M39.8292372,28.7405644 C40.4229011,29.7688198 41.2654525,31.294853 41.8591163,32.3231085 C40.6468046,33.0230377 39.4344915,33.7229656 38.2221797,34.4228949 C37.6195272,33.3998302 36.7679844,31.8789864 36.1653319,30.8559217 L39.8292372,28.7405644 L39.8292372,28.7405644 Z M25.5034384,12.7756833 C24.8937819,11.0244584 28.0008071,9.13918376 29.2554939,10.4075752 C32.6505629,16.2134148 39.4836123,28.0001335 39.4836123,28.0001335 L39.4836123,28.0001335 L35.7586329,30.2559447 C35.7586329,30.2559447 28.8524664,18.575875 25.5034384,12.7756833 Z M32.6327563,26.1328934 C33.4093719,27.4780297 34.1859862,28.8231675 34.9626019,30.1683038 L21.1676527,30.1683038 C21.9611411,28.8231675 22.7546309,27.4780297 23.5481193,26.1328934 L32.6327563,26.1328934 Z M16.9119607,26.1328934 L14.5862422,30.161157 L14.5862422,30.161157 L9.33333333,30.161157 L9.33333333,26.1328934 L16.9119607,26.1328934 Z M46.7911111,26.1328934 L46.7911111,30.0679501 L41.4139405,30.0679501 C40.6204521,28.7562641 40.0758513,27.4445794 39.2823629,26.1328934 L46.7911111,26.1328934 Z M23.2568522,16.5137017 C24.5243391,14.7781511 27.8188803,16.4902752 26.9973037,18.4216783 C26.4548417,19.3106968 25.7532551,20.72831 25.7532551,20.72831 L25.7532551,20.72831 L22.1314215,18.6372429 C22.1314215,18.6372429 22.923191,17.0556224 23.2568522,16.5137017 Z" id="path-9"></path>
+        <filter x="-4.0%" y="-4.6%" width="108.0%" height="109.2%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-4.0%" y="-4.6%" width="108.0%" height="109.2%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0844655797 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端-HD" transform="translate(-511.000000, -25.000000)">
+            <g id="ico-appStore" transform="translate(511.000000, 25.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="base"></g>
+                <g id="icon" mask="url(#mask-2)">
+                    <g transform="translate(4.000000, 4.000000)">
+                        <g id="Oval-1" fill="none">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use stroke="url(#linearGradient-4)" stroke-width="0.5" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                        <circle id="Oval-1" fill="url(#radialGradient-7)" fill-rule="evenodd" cx="28" cy="28" r="25.9155556"></circle>
+                        <g id="Shape" fill="none">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                            <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

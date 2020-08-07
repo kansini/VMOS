@@ -4,6 +4,7 @@
             <vmo-button
                     :icon="btn.icon"
                     v-for="(btn,index) in buttons"
+                    :menus="btn.menus"
                     :is-active="currentBtn == index"
                     :key="btn.title"
                     @click="clickTopMenu(index)"
@@ -49,10 +50,68 @@
                 default: () => [
                     {
                         "icon": "apple",
-                        "isActive": true
+                        "isActive": true,
+                        "menus": [
+                            {
+                                "title": "关于本机",
+                                "divider": true
+                            },
+                            {
+                                "title": "系统偏好设置"
+                            },
+                            {
+                                "title": "App Store",
+                                "divider": true
+                            },
+                            {
+                                "title": "最近使用项目",
+                                "divider": true
+                            },
+                            {
+                                "title": "强制退出",
+                                "shortcut": "⌘W",
+                                "divider": true
+                            },
+                            {"title": "睡眠"},
+                            {"title": "重新启动"},
+                            {
+                                "title": "关机",
+                                "divider": true
+                            },
+                            {
+                                "title": "锁定屏幕",
+                                "shortcut": "^⌘Q",
+                            },
+                            {
+                                "title": "退出登录",
+                                "shortcut": "⇧⌘Q"
+                            }]
                     },
                     {
-                        "title": "访达"
+                        "title": "访达",
+                        "menus": [
+                            {
+                                "title": "关于访达",
+                                "divider": true
+                            },
+                            {
+                                "title": "偏好设置…",
+                                "divider": true,
+                                "shortcut": "⌘,",
+                            },
+                            {
+                                "title": "倾倒废纸篓",
+                                "divider": true
+                            },
+                            {
+                                "title": "服务",
+                                "divider": true
+                            },
+                            {"title": "隐藏访达"},
+                            {"title": "隐藏其它"},
+                            {"title": "全部显示"}
+                        ]
+
                     },
                     {
                         "title": "文件"
@@ -125,8 +184,7 @@
             width: 100%;
             height: calc(100vh - 22px);
             z-index: 11;
-            background: url("../../assets/img/wallpaper/Sierra.jpg") no-repeat center;
-            background-size: 100%;
+            background: transparent;
         }
 
         .vmo-menubar-left {
