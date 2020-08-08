@@ -6,20 +6,25 @@
          @click="clickWin"
     >
         <vmo-window-header
-                title="finder"
+                :title="finderTitle"
                 :isActive="isActive"
                 :isFinder="true"
                 @toggleFullScreen="toggleFullScreen"
                 @close="close()"/>
         <div class="vmo-finder-container">
             <div class="vmo-finder-aside">
-                <div class="menu-group" v-for="group in menuGroup" :key="group.groupTitle">
+                <div class="menu-group" v-for="(group,groupIndex) in menuGroup" :key="group.groupTitle">
                     <div class="aside-group-title">
-                        {{ group.groupTitle }}
+                        <div>{{ group.groupTitle }}</div>
+                        <div v-if="group.show" @click="group.show = !group.show" class="btn-toggle">隐藏</div>
+                        <div v-else @click="group.show = !group.show" class="btn-toggle">显示</div>
                     </div>
-                    <div class="menu-list" v-for="(item,index) in group.menus" :key="index">
-                        <div class="menu-list-item" :class="{isActive:current == index}" @click="clickItem(index)">
-                            <vmo-icon :icon="item.icon"/>
+                    <div class="menu-list" :style="!group.show ? 'height:0':''" :ref="`menu${groupIndex}`">
+                        <div class="menu-list-item" v-for="(item,index) in group.menus" :key="index"
+                             :class="{isActive:current.toString() == [groupIndex,index].toString()}"
+                             @click="clickItem(groupIndex,index)">
+                            <vmo-icon class="vmo-icon-tag" :icon="item.tag" v-if="item.tag"/>
+                            <vmo-icon :icon="item.icon" v-else/>
                             <div class="menu-list-item--title">{{item.title}}</div>
                         </div>
                     </div>
@@ -51,10 +56,12 @@
         data() {
             return {
                 isFull: false,
-                current: -1,
+                current: [-1, -1],
+                finderTitle: "Macintosh HD",
                 menuGroup: [
                     {
                         "groupTitle": "个人收藏",
+                        "show": true,
                         "menus": [
                             {
                                 "icon": "airDrop",
@@ -97,14 +104,52 @@
                     },
                     {
                         "groupTitle": "iCloud",
+                        "show": true,
                         "menus": [
                             {
                                 "icon": "iCloud",
                                 "title": "iCloud云盘"
                             }
                         ]
+                    },
+                    {
+                        "groupTitle": "标签",
+                        "show": true,
+                        "menus": [
+                            {
+                                "tag": "tagRed",
+                                "title": "红色"
+                            },
+                            {
+                                "tag": "tagYellow",
+                                "title": "黄色"
+                            },
+                            {
+                                "tag": "tagOrange",
+                                "title": "橙色"
+                            },
+                            {
+                                "tag": "tagGreen",
+                                "title": "绿色"
+                            },
+                            {
+                                "tag": "tagBlue",
+                                "title": "蓝色"
+                            },
+                            {
+                                "tag": "tagPurple",
+                                "title": "紫色"
+                            },
+                            {
+                                "tag": "tagGray",
+                                "title": "灰色"
+                            },
+                            {
+                                "icon": "allTags",
+                                "title": "所有标签"
+                            }
+                        ]
                     }
-
                 ]
             }
         },
@@ -118,8 +163,8 @@
             toggleFullScreen() {
                 this.isFull = !this.isFull
             },
-            clickItem(index) {
-                this.current = index
+            clickItem(groupIndex, index) {
+                this.current = [groupIndex, index]
             }
         }
     }
@@ -153,18 +198,36 @@
                 background: rgba(246, 246, 246, 0.85);
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, .2);
                 backdrop-filter: blur(20px);
+                overflow: scroll;
 
                 .menu-group {
-                    margin-bottom: 12px;
+                    &:not(:last-child) {
+                        margin-bottom: 12px;
+                    }
+
                     .aside-group-title {
+                        display: flex;
+                        justify-content: space-between;
                         padding: 0 10px;
                         font-size: 12px;
                         color: #666;
                         font-weight: 600;
                         margin-bottom: 4px;
+                        cursor: default;
+
+                        .btn-toggle {
+                            opacity: 0;
+                            transition: opacity ease .4s;
+                        }
+
+                        &:hover .btn-toggle {
+                            opacity: 1;
+                        }
                     }
 
                     .menu-list {
+                        overflow: hidden;
+                        transition: all ease .4s;
 
                         .menu-list-item {
                             display: flex;
@@ -183,7 +246,7 @@
 
                     .isActive {
                         color: #000;
-                        background-image: linear-gradient(90deg, rgba(153, 153, 153, .6) 0%, rgba(201, 201, 201, .5) 80%);
+                        background-image: linear-gradient(90deg, rgba(201, 201, 201, .5) 0%, rgba(153, 153, 153, .6) 80%);
                     }
 
                 }

@@ -11,7 +11,6 @@
                     @clickWin="activeWin(index)"
                     @close="closeApp(index)"
                     :key="app.name"
-                    :isFullSize.sync="app.fullSize"
                     v-drag
         />
         <vmo-dock @click="clickDock" :visible="showDock"/>
@@ -34,13 +33,13 @@
                         "name": "terminal",
                         "show": true,
                         "level": 1,
-                        "fullSize": false
+                        //"fullSize": false
                     },
                     {
                         "name": "finder",
                         "show": true,
                         "level": 2,
-                        "fullSize": false
+                       // "fullSize": false
                     },
                     // {
                     //     "name": "win",
@@ -125,5 +124,8 @@
 
     .is-top {
         z-index: 997 !important;
+    }
+    .is-full {
+        z-index: 999 !important;
     }
 </style>

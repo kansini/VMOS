@@ -13,6 +13,14 @@ url('./iconfont.svg?t=1596786497075#vmo') format('svg');
     overflow: hidden;
 }
 
+.vmo-icon-tag {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
 [class^="vmo-ico-"] {
     font-family: "vmo" !important;
     font-size: 16px;
@@ -20,6 +28,7 @@ url('./iconfont.svg?t=1596786497075#vmo') format('svg');
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 
 .vmo-ico-allFiles:before {
     content: "\e610";
