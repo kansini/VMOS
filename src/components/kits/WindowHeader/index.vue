@@ -6,7 +6,10 @@
                 <div @click="minimise" class="btn-minimise"></div>
                 <div @click="toggleFullScreen" class="btn-toggleFullScreen"></div>
             </div>
-            <div class="vmo-window-header--title">{{title}}</div>
+            <div class="vmo-window-header--title">
+                <vmo-icon :icon="titleIcon" type="color"/>
+                <div>{{title}}</div>
+            </div>
         </div>
         <div class="vmo-window-header--tools" v-if="isFinder">
 
@@ -30,6 +33,10 @@
             isFinder: {
                 type: Boolean,
                 default: false
+            },
+            titleIcon: {
+                type: String,
+                default: 'folder'
             }
         },
         data() {
@@ -65,7 +72,6 @@
 
         .vmo-window-header--top {
             height: 32px;
-            line-height: 32px;
 
             .traffic-light {
                 position: absolute;
@@ -136,12 +142,20 @@
             }
 
             .vmo-window-header--title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 font-family: Helvetica;
+                height: 32px;
                 font-size: 13px;
                 color: #423F42;
                 letter-spacing: -0.3px;
                 text-align: center;
                 text-shadow: 1px 1px 0 rgba(255, 255, 255, .8);
+
+                div {
+                    margin-left: 4px;
+                }
             }
         }
 

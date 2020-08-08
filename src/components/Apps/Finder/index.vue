@@ -9,6 +9,7 @@
                 :title="finderTitle"
                 :isActive="isActive"
                 :isFinder="true"
+                :titleIcon="titleIcon"
                 @toggleFullScreen="toggleFullScreen"
                 @close="close()"/>
         <div class="vmo-finder-container">
@@ -19,25 +20,28 @@
                         <div v-if="group.show" @click="group.show = !group.show" class="btn-toggle">隐藏</div>
                         <div v-else @click="group.show = !group.show" class="btn-toggle">显示</div>
                     </div>
-                    <div class="menu-list" :style="!group.show ? 'height:0':''" :ref="`menu${groupIndex}`">
+                    <div class="menu-list" :style="!group.show ? 'height:0':''">
                         <div class="menu-list-item" v-for="(item,index) in group.menus" :key="index"
                              :class="{isActive:current.toString() == [groupIndex,index].toString()}"
-                             @click="clickItem(groupIndex,index)">
-                            <vmo-icon class="vmo-icon-tag" :icon="item.tag" v-if="item.tag"/>
-                            <vmo-icon :icon="item.icon" v-else/>
+                             @click="clickItem(groupIndex,index,item.title,item.icon)">
+                            <vmo-icon :icon="item.icon"/>
                             <div class="menu-list-item--title">{{item.title}}</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="vmo-finer-content"></div>
+            <div class="vmo-finer-content">
+               <folderList />
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+    import folderList from './FolderList'
     export default {
         name: "vmo-finder",
+        components:{folderList},
         props: {
             isShow: {
                 type: Boolean,
@@ -58,6 +62,7 @@
                 isFull: false,
                 current: [-1, -1],
                 finderTitle: "Macintosh HD",
+                titleIcon: "",
                 menuGroup: [
                     {
                         "groupTitle": "个人收藏",
@@ -82,6 +87,10 @@
                             {
                                 "icon": "documents",
                                 "title": "文稿"
+                            },
+                            {
+                                "icon": "folder",
+                                "title": "works"
                             },
                             {
                                 "icon": "downloads",
@@ -117,31 +126,31 @@
                         "show": true,
                         "menus": [
                             {
-                                "tag": "tagRed",
+                                "icon": "tag-red",
                                 "title": "红色"
                             },
                             {
-                                "tag": "tagYellow",
+                                "icon": "tag-yellow",
                                 "title": "黄色"
                             },
                             {
-                                "tag": "tagOrange",
+                                "icon": "tag-orange",
                                 "title": "橙色"
                             },
                             {
-                                "tag": "tagGreen",
+                                "icon": "tag-green",
                                 "title": "绿色"
                             },
                             {
-                                "tag": "tagBlue",
+                                "icon": "tag-blue",
                                 "title": "蓝色"
                             },
                             {
-                                "tag": "tagPurple",
+                                "icon": "tag-purple",
                                 "title": "紫色"
                             },
                             {
-                                "tag": "tagGray",
+                                "icon": "tag-gray",
                                 "title": "灰色"
                             },
                             {
@@ -163,8 +172,10 @@
             toggleFullScreen() {
                 this.isFull = !this.isFull
             },
-            clickItem(groupIndex, index) {
+            clickItem(groupIndex, index, title, icon) {
                 this.current = [groupIndex, index]
+                this.finderTitle = title
+                this.titleIcon = icon
             }
         }
     }
@@ -255,7 +266,10 @@
             .vmo-finer-content {
                 width: calc(100% - 240px);
                 height: 100%;
+                padding: 4px 14px;
+                box-sizing: border-box;
                 background: #fff;
+                overflow: scroll;
             }
         }
     }
