@@ -3,7 +3,7 @@
         <div class="vmo-launchpad-icon"
              @click="handleToDockIcon"
         >
-            <img :src="`./icons/dock/ico-${icon}.svg`" alt="">
+            <img :src="`./icons/apps/ico-${icon}.svg`" alt="">
             <div class="vmo-badge" v-if="update > 0">
                 {{ update }}
             </div>

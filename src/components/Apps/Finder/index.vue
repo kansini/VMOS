@@ -202,7 +202,7 @@
             overflow: hidden;
 
             .vmo-finder-aside {
-                width: 240px;
+                width: 214px;
                 height: 100%;
                 padding: 8px 0;
                 box-sizing: border-box;
@@ -264,7 +264,7 @@
             }
 
             .vmo-finer-content {
-                width: calc(100% - 240px);
+                width: calc(100% - 214px);
                 height: 100%;
                 padding: 4px 14px;
                 box-sizing: border-box;

@@ -1,6 +1,6 @@
 <template>
     <div class="vmo-dock-icon"
-         :style="`background:url(./icons/dock/ico-${icon}.svg )no-repeat center;background-size: 60px;`"
+         :style="`background:url(./icons/apps/ico-${icon}.svg )no-repeat center;background-size: 60px;`"
          :class="isClicked ? 'is-clicked' : ''"
          @mousedown="toggleIcon(true)"
          @mouseup="toggleIcon(false)"

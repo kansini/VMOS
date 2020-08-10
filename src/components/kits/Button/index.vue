@@ -2,7 +2,7 @@
     <button class="mov-button"
             @click.prevent="handleToButton"
             @mouseover="overButton"
-            :class="{isActive:isActive}">
+            :class="[{isActive:isActive},type == 'flat' ? 'mov-button-flat':'']">
         <i :class="`vmo-ico-${icon}`"></i>
         <slot></slot>
         <vmo-menu :visible="isActive" :menus="menus"/>
@@ -28,6 +28,10 @@
             menus: {
                 type: Array,
                 default: () => []
+            },
+            type: {
+                type: String,
+                default: ""
             }
 
         },
@@ -46,12 +50,10 @@
     .mov-button {
         position: relative;
         height: 22px;
-        line-light: 22px;
         padding: 0 10px;
         background: transparent;
         border: none;
         outline: none;
-        z-index: 9999;
         font-size: 14px;
         color: rgba(0, 0, 0, .75);
         font-weight: 400;
@@ -63,6 +65,20 @@
 
         i {
             font-size: 16px;
+        }
+    }
+
+    .mov-button-flat {
+        padding: 0 8px;
+        background-image: linear-gradient(180deg, #FEFEFE 0%, #F1F1F1 100%);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.10);
+        border: 1px solid #D2D0D2;
+        border-radius: 4px;
+        font-weight: 400 !important;
+
+        i {
+            font-size: 12px;
+            color: #808080;
         }
     }
 

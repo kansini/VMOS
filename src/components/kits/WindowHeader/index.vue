@@ -12,9 +12,30 @@
             </div>
         </div>
         <div class="vmo-window-header--tools" v-if="isFinder">
-
+            <div>
+                <vmo-button type="flat" icon="back"/>
+                <vmo-button type="flat" icon="forward"/>
+            </div>
+            <div class="vmo-view-toggle">
+                <div class="vmo-view-toggle--item"
+                     v-for="(item,index) in tabs"
+                     :class="{isCurrent:currentView == index}"
+                     :key="item.icon"
+                     @click="currentView = index"
+                >
+                    <div :class="`vmo-ico-${item.icon}`"></div>
+                </div>
+            </div>
+            <div>
+                <vmo-button type="flat" icon="back"/>
+                <vmo-button type="flat" icon="share"/>
+            </div>
+            <div class="vmo-search">
+                <input type="text">
+            </div>
         </div>
     </div>
+
 
 </template>
 
@@ -41,7 +62,14 @@
         },
         data() {
             return {
-                isFull: false
+                isFull: false,
+                currentView: 0,
+                tabs: [
+                    {"icon": "iconView"},
+                    {"icon": "listView"},
+                    {"icon": "columnView"},
+                    {"icon": "arrangement"}
+                ]
             }
         },
         methods: {
@@ -71,7 +99,7 @@
         border-radius: 5px 5px 0 0;
 
         .vmo-window-header--top {
-            height: 32px;
+            height: 24px;
 
             .traffic-light {
                 position: absolute;
@@ -80,7 +108,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                height: 32px;
+                height: 24px;
                 width: 52px;
 
 
@@ -146,7 +174,7 @@
                 justify-content: center;
                 align-items: center;
                 font-family: Helvetica;
-                height: 32px;
+                height: 24px;
                 font-size: 13px;
                 color: #423F42;
                 letter-spacing: -0.3px;
@@ -160,10 +188,69 @@
         }
 
         .vmo-window-header--tools {
-            height: 24px;
+            height: 32px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .vmo-view-toggle {
+                height: 22px;
+                width: 110px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                overflow: hidden;
+                background-image: linear-gradient(180deg, #FEFEFE 0%, #FDFDFD 5%, #F1F1F1 100%);
+                border: 1px solid #C9C9C9;
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.10);
+                border-radius: 4px;
+                box-sizing: border-box;
+
+                .vmo-view-toggle--item {
+                    width: 25%;
+                    height: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #808080;
+
+                    &:not(:last-child) {
+                        border-right: 1px solid #DEDEDE;
+                    }
+
+                    [class^="vmo-ico-"] {
+                        font-size: 12px;
+
+                    }
+                }
+
+                .isCurrent {
+                    color: #fff;
+                    background: #686768;
+                    border: 1px solid #686768;
+                    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.10);
+                    box-sizing: border-box;
+                }
+            }
+
+            .vmo-search {
+                width: 25%;
+                height: 20px;
+                line-height: 20px;
+
+                input {
+                    background: linear-gradient(180deg, #FEFEFE 0%, #F1F1F1 100%);
+                    border: 1px solid #eaeaea;
+                    box-shadow: 0 0 0 1px rgba(0, 0, 0, .10), 0 0 1px 0 rgba(0, 0, 0, .20);
+                    border-radius: 4px;
+                    outline: none;
+                    padding: 0 4px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
         }
 
 

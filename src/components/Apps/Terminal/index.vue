@@ -77,7 +77,7 @@
 
         .vmo-terminal-body {
             width: 100%;
-            height: calc(100% - 32px);
+            height: calc(100% - 24px);
             background: rgba(0, 0, 0, .9);
             backdrop-filter: blur(6px);
             color: #29FE18;

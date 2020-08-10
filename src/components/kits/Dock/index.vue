@@ -2,7 +2,7 @@
     <transition name="slideUp">
         <div class="vmo-dock" v-if="visible">
             <div class="vmo-dock-item"
-                 :class="app.isActive ? 'vmo-dock-item-active': '' "
+                 :class="app.isActive ? 'vmo-apps-item-active': '' "
                  v-for="app in apps"
                  :key="app.icon"
                  @click="handleToIcon(app.icon)"
